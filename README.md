@@ -4,13 +4,13 @@
 ## 💡 Sobre o projeto
 Repositório do Trabalho sobre Docker Compose - Sistemas Operacionais/Atitus 02/2022
 
-Esse repositório contém arquivos com uma sede de Banco de Dados MySQL sobre livros, como se fosse uma biblioteca, eles serão visualizados em modo JSON com:
+Esse repositório contém arquivos com uma sede de Banco de Dados MySQL sobre livros, imitando uma biblioteca, eles serão visualizados em modo JSON com:
 >
-> a numeração por ID
+> numeração única por ID
 >
-> as strings relatando o nome dos livros
+> strings relatando o nome dos livros
 >
-> e as strings com as descrições dos mesmos
+> e strings com as descrições dos mesmos
 >
 
 ## :envelope: Conteúdo
@@ -37,7 +37,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
 
 ## 💻 Execução 
 
-1. Baixar os documentos do repositório [tometchy](https://github.com/tometchy/Docker-compose-dotnet-core-and-mysql.git) na sua máquina VM para que a biblioteca fique disponível e os exemplos possam ser visualizados futuramente;
+1. Baixar os documentos do repositório na sua máquina VM para que a biblioteca fique disponível e os exemplos possam ser visualizados futuramente;
 
 
 2. Para acessar o sistema em sua máquina, entre na url:   ``` http://localhost:8080/ ```
@@ -67,7 +67,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
    
    
  4. Para rodar o Conteiner e criar as imagens, basta rodar o comando (o --build é utilizado para atualizar quaisquer mudanças): 
- 
+ * docker compose up = busca o arquivo.yml e constrói tudo = redes, imagens, etc; 
    
      ```
      docker-compose up -d --build
@@ -83,17 +83,19 @@ Frameworks e Bibliotecas necessárias durante o processo:
      ```
      
  
- 6. Para visualizar os Conteiners da VM, como na imagem, basta rodar o comando: 
+ 6. Para visualizar os Conteiners, Imagens e Portas da VM, como na imagem, basta rodar o comando: 
  
      ```
      docker ps
      ```
      ![image](https://user-images.githubusercontent.com/106711311/203683938-805d603a-0434-4ed5-b874-dae7454a4a72.png)
 
- 7. Conteúdo do DockerFile:
+ 7. Conteúdo do Docker Compose:
+ * Versão
+ * Serviços - Conteiners e conteúdos
+ * Portas e Dependências
  
-     ![image](https://user-images.githubusercontent.com/106711311/203684422-d3278d54-2b48-424f-abc7-0a645ee4128d.png)
-
+     ![image](https://user-images.githubusercontent.com/106711311/203834714-d51db65b-4e8c-4cac-9157-0e53e03006f7.png)
 
 
 ### :mortar_board: Contribuidores
