@@ -94,7 +94,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
    
 
 
- 6. Conteúdo do Docker Compose:
+ 6. Conteúdo do Docker Compose.yml:
  * Versão
  * Serviços - Containers e seus conteúdos
  * Portas e Dependências
