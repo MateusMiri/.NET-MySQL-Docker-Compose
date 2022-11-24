@@ -34,7 +34,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
 * [Asp.net](https://dotnet.microsoft.com/en-us/apps/aspnet)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * [GitHub](https://github.com/tometchy/Docker-compose-dotnet-core-and-mysql.git)
-* Back-End: #C
+* Linguagem de Programação: #C
 
 
 
