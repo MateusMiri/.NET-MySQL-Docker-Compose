@@ -15,7 +15,7 @@ Esse repositório contém arquivos com uma sede de Banco de Dados MySQL sobre li
 
 ## :envelope: Conteúdo
 
-* Docker/Docker Compose e Conteiners 🗸
+* Docker/Docker Compose e Containers 🗸
 
 * Ubuntu e Virtual Machines 🗸
 
@@ -43,7 +43,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
 1. Baixar os documentos do repositório na sua máquina VM para que a biblioteca fique disponível e os exemplos possam ser visualizados futuramente;
 
 
-2. Para rodar o Conteiner e criar as imagens, basta rodar o comando (o --build é utilizado para atualizar quaisquer mudanças): 
+2. Para rodar o Container e criar as imagens, basta rodar o comando (o --build é utilizado para atualizar quaisquer mudanças): 
  * docker compose up = busca o arquivo.yml e constrói tudo = redes, imagens, etc; 
    
      ```
@@ -52,7 +52,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
      
      
      
- 3. Para limpar Conteiners e Redes, basta rodar o comando: 
+ 3. Para limpar Containers e Redes, basta rodar o comando: 
  
    
      ```
@@ -60,7 +60,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
      ```
      
  
- 4. Para visualizar os Conteiners, Imagens e Portas da VM, como na imagem, basta rodar o comando: 
+ 4. Para visualizar os Containers, Imagens e Portas da VM, como na imagem, basta rodar o comando: 
  
      ```
      docker ps
@@ -68,7 +68,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
      ![image](https://user-images.githubusercontent.com/106711311/203683938-805d603a-0434-4ed5-b874-dae7454a4a72.png)
 
 5. Para acessar o sistema em sua máquina, entre na url:   ``` http://localhost:8080/ ```
-* Caso não obter um resultado, espere alguns segundos pois o banco de dados MySQL pode não estar 100% inicializado
+* Caso não obter um resultado, espere alguns segundos pois o banco de dados MySQL pode não estar 100% inicializado;
  
    * pela Máquina Virtual
    
@@ -96,7 +96,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
 
  6. Conteúdo do Docker Compose:
  * Versão
- * Serviços - Conteiners e conteúdos
+ * Serviços - Containers e seus conteúdos
  * Portas e Dependências
  
      ![image](https://user-images.githubusercontent.com/106711311/203834714-d51db65b-4e8c-4cac-9157-0e53e03006f7.png)
