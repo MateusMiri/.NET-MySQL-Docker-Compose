@@ -1,4 +1,4 @@
-# BDD DE BIBLIOTECA DE LIVROS ON DOCKER 
+# BIBLIOTECA DE LIVROS ON DOCKER 
 <div id="top"></div>
 
 ## 💡 Sobre o projeto
@@ -30,7 +30,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
 
 * [Ubuntu](https://ubuntu.com/download)
 * [Docker](https://docs.docker.com/engine/install/ubuntu/)
-* [MySQL](https://www.mysql.com/downloads/)
+* [MySQL 5.7.13](https://www.mysql.com/downloads/)
 * [Asp.net](https://dotnet.microsoft.com/en-us/apps/aspnet)
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * [GitHub](https://github.com/tometchy/Docker-compose-dotnet-core-and-mysql.git)
