@@ -40,7 +40,31 @@ Frameworks e Bibliotecas necessárias durante o processo:
 1. Baixar os documentos do repositório na sua máquina VM para que a biblioteca fique disponível e os exemplos possam ser visualizados futuramente;
 
 
-2. Para acessar o sistema em sua máquina, entre na url:   ``` http://localhost:8080/ ```
+2. Para rodar o Conteiner e criar as imagens, basta rodar o comando (o --build é utilizado para atualizar quaisquer mudanças): 
+ * docker compose up = busca o arquivo.yml e constrói tudo = redes, imagens, etc; 
+   
+     ```
+     docker-compose up -d --build
+     ```
+     
+     
+     
+ 3. Para limpar Conteiners e Redes, basta rodar o comando: 
+ 
+   
+     ```
+     docker-compose down 
+     ```
+     
+ 
+ 4. Para visualizar os Conteiners, Imagens e Portas da VM, como na imagem, basta rodar o comando: 
+ 
+     ```
+     docker ps
+     ```
+     ![image](https://user-images.githubusercontent.com/106711311/203683938-805d603a-0434-4ed5-b874-dae7454a4a72.png)
+
+5. Para acessar o sistema em sua máquina, entre na url:   ``` http://localhost:8080/ ```
 * Caso não obter um resultado, espere alguns segundos pois o banco de dados MySQL pode não estar 100% inicializado
  
    * pela Máquina Virtual
@@ -65,38 +89,59 @@ Frameworks e Bibliotecas necessárias durante o processo:
       ![image](https://user-images.githubusercontent.com/106711311/203680530-9f501419-fba8-4143-a4ee-7d3201af9fcf.png)
 
    
-   
- 4. Para rodar o Conteiner e criar as imagens, basta rodar o comando (o --build é utilizado para atualizar quaisquer mudanças): 
- * docker compose up = busca o arquivo.yml e constrói tudo = redes, imagens, etc; 
-   
-     ```
-     docker-compose up -d --build
-     ```
-     
-     
-     
- 5. Para limpar Conteiners e Redes, basta rodar o comando: 
- 
-   
-     ```
-     docker-compose down 
-     ```
-     
- 
- 6. Para visualizar os Conteiners, Imagens e Portas da VM, como na imagem, basta rodar o comando: 
- 
-     ```
-     docker ps
-     ```
-     ![image](https://user-images.githubusercontent.com/106711311/203683938-805d603a-0434-4ed5-b874-dae7454a4a72.png)
 
- 7. Conteúdo do Docker Compose:
+
+ 6. Conteúdo do Docker Compose:
  * Versão
  * Serviços - Conteiners e conteúdos
  * Portas e Dependências
  
      ![image](https://user-images.githubusercontent.com/106711311/203834714-d51db65b-4e8c-4cac-9157-0e53e03006f7.png)
 
+ 7. Base da biblioteca montada na linguagem de programação #C: 
+
+ ``` json
+
+namespace ProductLibrary
+{
+    public class Product
+    {
+        public int Id { get; }
+        public string Name { get; }
+        public string Description { get; }
+
+        public Product(int id, string name, string description)
+        {
+          Id = id;
+          Name = name;
+          Description = description;
+       }
+    }
+}
+
+ ```
+
+
+ ``` json
+
+CREATE DATABASE "product-db /*!40100 COLLATE "latint swedish cil" */;
+USE 'product-db";
+
+CREATE TABLE 'product' (
+       'Id' INT NOT NULL AUTO INCREMENT,
+       'Name' TEXT NOT NULL,
+       'Description' TEXT NOT NULL,
+       INDEX 'Id' ('Id)
+)
+COLLATE='latin1_ swedish_ci';
+
+
+INSERT IGNORE INTO product (Id, Name, Description)
+VALUES
+(1,"Dependency Injection Principles, Practices, and Patterns", "Book by Steven van Deursen and Mark Seemann"),
+(2,"Agile Software Development, Principles, Patterns, and Practices", "Book by Robert C. Martin");
+
+ ```
 
 ### :mortar_board: Contribuidores
 
