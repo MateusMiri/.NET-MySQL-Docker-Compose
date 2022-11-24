@@ -43,7 +43,7 @@ Frameworks e Bibliotecas necessárias durante o processo:
 1. Baixar os documentos do repositório na sua máquina VM para que a biblioteca fique disponível e os exemplos possam ser visualizados futuramente;
 
 
-2. Para rodar o Container e criar as imagens, basta rodar o comando (o --build é utilizado para atualizar quaisquer mudanças): 
+2. Para rodar o Container e criar as imagens, basta rodar o comando (o --build é opcional, utilizado para atualizar quaisquer mudanças): 
  * docker compose up = busca o arquivo.yml e constrói tudo = redes, imagens, etc; 
    
      ```
